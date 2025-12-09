@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <!-- LEFT SIDE MENU -->
+    <div class="sidebar">
+        <h2>Your Name</h2>
+        <ul>
+            <li onclick="openTab('home')">Home</li>
+            <li onclick="openTab('academics')">Academic Timeline</li>
+            <li onclick="openTab('projects')">Projects</li>
+            <li onclick="openTab('skills')">Technical Skills</li>
+            <li onclick="openTab('papers')">Papers</li>
+            <li onclick="openTab('cv')">CV</li>
+            <li onclick="openTab('contact')">Contact</li>
+        </ul>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="content">
+
+        <!-- HORIZONTAL TABS -->
+        <div class="topnav">
+            <button onclick="openTab('home')">Home</button>
+            <button onclick="openTab('academics')">Academics</button>
+            <button onclick="openTab('projects')">Projects</button>
+            <button onclick="openTab('skills')">Skills</button>
+            <button onclick="openTab('papers')">Papers</button>
+            <button onclick="openTab('cv')">CV</button>
+            <button onclick="openTab('contact')">Contact</button>
+        </div>
+
+        <!-- HOME SECTION -->
+        <section id="home" class="tab">
+            <h1>Welcome!</h1>
+            <img src="assets/profile.jpg" class="profile-pic" alt="Profile Photo" />
+            <p class="bio">
+                Write your bio here. Introduce yourself, mention your academic background, 
+                areas of interest, goals, or anything else you'd like visitors to know.
+            </p>
+        </section>
+
+        <!-- ACADEMICS -->
+        <section id="academics" class="tab">
+            <h2>Academic Timeline</h2>
+            <ul>
+                <li><strong>2025–2023:</strong> Description of degree/program</li>
+                <li><strong>2023–2019:</strong> Description of earlier education</li>
+                <li>Add more...</li>
+            </ul>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="tab">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Project A:</strong> Short description</li>
+                <li><strong>Project B:</strong> Short description</li>
+                <li>Add more…</li>
+            </ul>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="tab">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Programming Languages</li>
+                <li>Tools & Frameworks</li>
+                <li>Specialized Skills</li>
+            </ul>
+        </section>
+
+        <!-- PAPERS -->
+        <section id="papers" class="tab">
+            <h2>Research Papers</h2>
+            <ul>
+                <li>Paper Title – Journal/Conference – Year</li>
+                <li>Paper Title – Journal/Conference – Year</li>
+            </ul>
+        </section>
+
+        <!-- CV -->
+        <section id="cv" class="tab">
+            <h2>Curriculum Vitae</h2>
+            <p>Download my CV:</p>
+            <a href="assets/your_cv.pdf" class="cv-button" download>Download CV</a>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="tab">
+            <h2>Contact Information</h2>
+            <p><strong>Email:</strong> yourname@example.com</p>
+            <p><strong>LinkedIn:</strong> link-here</p>
+            <p><strong>GitHub:</strong> github-username</p>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
